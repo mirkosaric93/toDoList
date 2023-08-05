@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+    color: rgba(0, 90, 20, 0.7);
+    margin-bottom: 10px;
+}
+h4{
+    text-align: center;
+    color: rgba(0, 20, 90, 0.7);
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.pozadina{
+    background: radial-gradient(#8fc753, #616bd4);
+    width: 100vw;
+    min-height: 100vh;
+    word-wrap: normal;
+}
+.container{
+    text-align: center;
+    padding-top: 5vh;
+}
+.container #toDo{
+    display: inline-block;
+    width: 40vw;
+    height: 60px;
+    font-size: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 10, 0, 0.3);
+    border-style: inset;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.container #toDo:focus{
+    outline: none;
+}
+.container #toDoBtn{
+    opacity: 0.8;
+    border: none;
+    height: 60px;
+    font-size: 40px;
+    margin-left: 10px;
+    padding: 5px 5px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: ease 0.4s all;
+    border: 2px solid rgba(0, 0, 50, 0.6);
+}
+.container #toDoBtn:hover{
+    background-color: rgba(0, 10, 0, 0.5);
+}
+#toDos{
+    text-align: left;
+}
+.paragraph{
+    position: relative;
+    padding: 0px 40px;
+    margin: 15px;
+    font-size: 40px;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 50, 0.1);
+    padding-left: 25%;
+}
+.paragraph.checked::before{
+    content: '';
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 15%;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+.paragraph span{
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+#date{
+    font-size: 0.3em;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+}
